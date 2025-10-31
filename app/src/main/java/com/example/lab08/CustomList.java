@@ -48,7 +48,6 @@ public class CustomList {
      * @return int number of cities
      */
     public int countCities() {
-        // TODO: Implement this method
-        return -1; // Returns wrong value - will make test fail
+        return cities.size();
     }
 }
