@@ -10,11 +10,22 @@ public class CustomList {
         this.cities = new ArrayList<>();
     }
 
-    public void addCity(City city) {
-        cities.add(city);
+    /**
+     * Returns the number of cities in the list
+     * @return int count of cities
+     */
+    public int getCount() {
+        return cities.size();
     }
 
-    
+    /**
+     * This adds a city object to the list
+     * @param city
+     */
+    public void addCity(City city) {
+        // TODO: Implement this method
+        // Leave empty to make test fail
+    }
 
     // Will be implemented later using TDD (leave blank for now)
     // public boolean hasCity(City city) { ... }
