@@ -26,6 +26,13 @@ public class CustomList {
         cities.add(city);
     }
 
-    // Will be implemented later using TDD (leave blank for now)
-    // public boolean hasCity(City city) { ... }
+    /**
+     * Checks if a city is in the list
+     * @param city
+     * @return boolean
+     */
+    public boolean hasCity(City city) {
+        // TODO: Implement this method
+        return false; // Always returns false - will make test fail
+    }
 }
