@@ -23,11 +23,9 @@ public class CustomList {
      * @param city
      */
     public void addCity(City city) {
-        // TODO: Implement this method
-        // Leave empty to make test fail
+        cities.add(city);
     }
 
     // Will be implemented later using TDD (leave blank for now)
     // public boolean hasCity(City city) { ... }
 }
-
