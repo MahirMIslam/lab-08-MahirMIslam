@@ -52,9 +52,25 @@ public class CustomListTest {
         list = MockCityList();
         City city = new City("Saskatoon", "SK");
         list.addCity(city);
-        assertTrue(list.hasCity(city)); // City should be in list
+        assertTrue(list.hasCity(city));
         list.deleteCity(city);
-        assertFalse(list.hasCity(city)); // City should no longer be in list
-        assertEquals(0, list.getCount()); // List should be empty
+        assertFalse(list.hasCity(city));
+        assertEquals(0, list.getCount());
+    }
+
+    /**
+     * Test the countCities method
+     * Verifies that countCities returns the correct number of cities
+     */
+    @Test
+    public void countCitiesTest() {
+        list = MockCityList();
+        assertEquals(0, list.countCities()); // Empty list
+        list.addCity(new City("Edmonton", "AB"));
+        assertEquals(1, list.countCities()); // One city
+        list.addCity(new City("Calgary", "AB"));
+        assertEquals(2, list.countCities()); // Two cities
+        list.addCity(new City("Vancouver", "BC"));
+        assertEquals(3, list.countCities()); // Three cities
     }
 }

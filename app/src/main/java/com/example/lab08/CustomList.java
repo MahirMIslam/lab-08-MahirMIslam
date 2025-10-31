@@ -42,4 +42,13 @@ public class CustomList {
     public void deleteCity(City city) {
         cities.remove(city);
     }
+
+    /**
+     * Returns the count of cities in the list
+     * @return int number of cities
+     */
+    public int countCities() {
+        // TODO: Implement this method
+        return -1; // Returns wrong value - will make test fail
+    }
 }
