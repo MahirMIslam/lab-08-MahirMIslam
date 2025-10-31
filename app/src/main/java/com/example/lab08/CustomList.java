@@ -32,7 +32,6 @@ public class CustomList {
      * @return boolean
      */
     public boolean hasCity(City city) {
-        // TODO: Implement this method
-        return false; // Always returns false - will make test fail
+        return cities.contains(city);
     }
 }
