@@ -40,7 +40,6 @@ public class CustomList {
      * @param city
      */
     public void deleteCity(City city) {
-        // TODO: Implement this method
-        // Leave empty to make test fail
+        cities.remove(city);
     }
 }
